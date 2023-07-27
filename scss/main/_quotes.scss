@@ -1,0 +1,99 @@
+.quotes {
+  height: 100vh;
+  min-height: 960px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 101vh;
+  &__container {
+    display: flex;
+  }
+  &__left {
+    width: 50%;
+    padding-top: 300px;
+  }
+  &__right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    margin-top: 160px;
+  }
+  &__info {
+    max-width: 434px;
+  }
+  &__text {
+    text-align: left;
+    margin-top: 40px;
+  }
+  &__btn {
+    margin-top: 60px;
+  }
+}
+
+.item-quotes {
+  position: relative;
+  max-width: 452.59px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  z-index: 8;
+  &::after {
+    content: url(../../img/twitter.svg);
+    position: absolute;
+    z-index: 11;
+    right: 20px;
+    top: 30px;
+    cursor: pointer;
+  }
+  &__author {
+    display: flex;
+    gap: 22px;
+    img {
+      border-radius: 50%;
+      z-index: 10;
+      width: 64px;
+    }
+    &-info {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 68px;
+        height: 68px;
+        background-color: $color-yellowOrange;
+        border-radius: 50%;
+        top: 2px;
+        left: -85px; 
+        z-index: 9; 
+      }
+    }
+    &-name {
+      display: block;
+      font-size: 24px;
+    }
+    &-hobby {
+      display: block;
+      color: rgba($color-white, .5);
+    }
+  }
+  &__quote {
+    display: block;
+    margin-top: 22px;
+  }
+  &__date {
+    display: block;
+    margin-top: 9px;
+    font-size: 14px;
+    color: rgba($color-white, .5);
+  }
+  &:nth-child(1) {
+    align-self: flex-end;
+  } 
+  &:nth-child(3) {
+    align-self: center;
+  }
+}

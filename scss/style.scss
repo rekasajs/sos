@@ -62,6 +62,7 @@ $color-grey: #979797;
 /*БОЛЬШИЕ КОМПОНЕНТЫ*/
 @import "./header/header";
 @import "./main/main";
+@import "./footer/footer";
 
 /*МАЛЕНЬКИЕ КОМПОНЕНТЫ*/
 @import "./header/menu";
@@ -74,3 +75,5 @@ $color-grey: #979797;
 @import "./main/features";
 @import "./main/accordeon";
 @import "./main/requirements";
+@import "./main/quotes";
+
