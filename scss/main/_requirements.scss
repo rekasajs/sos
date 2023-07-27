@@ -1,0 +1,41 @@
+.requirements {
+  height: 100vh;
+  min-height: 960px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    padding-top: 145px;
+  }
+  &__info {
+    text-align: center;
+    margin-bottom: 140px;
+  }
+}
+
+.table-requirements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 570px;
+  min-height: 399px;
+  background-image: url(../../img/requirements-table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 573px 400px;
+  &__item {
+    padding: 10px;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgba($color-grey, .4);
+      border-right: 1px solid rgba($color-grey, .4);
+    }
+    span {
+      font-size: 24px;
+    }
+    p {
+      margin-top: 7px;
+    }
+  }
+  &__item-graphics {
+    grid-column: span 2;
+  }
+}

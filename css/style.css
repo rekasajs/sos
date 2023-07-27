@@ -466,3 +466,45 @@ input {
   max-width: 360px;
   letter-spacing: 1px;
 }
+
+.requirements {
+  height: 100vh;
+  min-height: 960px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.requirements__container {
+  padding-top: 145px;
+}
+.requirements__info {
+  text-align: center;
+  margin-bottom: 140px;
+}
+
+.table-requirements {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 570px;
+  min-height: 399px;
+  background-image: url(../../img/requirements-table.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 573px 400px;
+}
+.table-requirements__item {
+  padding: 10px;
+}
+.table-requirements__item:not(:last-child) {
+  border-bottom: 1px solid rgba(151, 151, 151, 0.4);
+  border-right: 1px solid rgba(151, 151, 151, 0.4);
+}
+.table-requirements__item span {
+  font-size: 24px;
+}
+.table-requirements__item p {
+  margin-top: 7px;
+}
+.table-requirements__item-graphics {
+  grid-column: span 2;
+}

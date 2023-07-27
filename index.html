@@ -1,188 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SOS</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container header__container">
-          <a href="#" class="logo">
-            <img src="img/logo.png" alt="SOS Logo" class="logo__img" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0" />
+  <title>SOS</title>
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet"
+        href="css/normalize.css" />
+  <link rel="stylesheet"
+        href="css/style.min.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container header__container">
+        <a href="#"
+           class="logo">
+          <img src="img/logo.png"
+               alt="SOS Logo"
+               class="logo__img" />
+        </a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a href="#"
+                 class="menu__link">main</a>
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                 class="menu__link">about</a>
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                 class="menu__link">game features</a>
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                 class="menu__link">system requirements</a>
+            </li>
+            <li class="menu__item">
+              <a href="#"
+                 class="menu__link">quotes</a>
+            </li>
+          </ul>
+        </nav>
+        <select class="change-lang"
+                name="change-lang"
+                id="">
+          <option value="eng"
+                  selected>eng</option>
+          <option value="rus">rus</option>
+          <option value="fra">fra</option>
+          <option value="deu">deu</option>
+        </select>
+        <div class="social">
+          <a href="https://www.xbox.com"
+             class="social__link">
+            <img src="img/xbox.svg"
+                 alt="xbox-link" />
           </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item">
-                <a href="#" class="menu__link">main</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">about</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">game features</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">system requirements</a>
-              </li>
-              <li class="menu__item">
-                <a href="#" class="menu__link">quotes</a>
-              </li>
-            </ul>
-          </nav>
-          <select class="change-lang" name="change-lang" id="">
-            <option value="eng" selected>eng</option>
-            <option value="rus">rus</option>
-            <option value="fra">fra</option>
-            <option value="deu">deu</option>
-          </select>
-          <div class="social">
-            <a href="https://www.xbox.com" class="social__link">
-              <img src="img/xbox.svg" alt="xbox-link" />
-            </a>
-            <a href="https://store.steampowered.com/" class="social__link">
-              <img src="img/steam.svg" alt="steam-link" />
-            </a>
+          <a href="https://store.steampowered.com/"
+             class="social__link">
+            <img src="img/steam.svg"
+                 alt="steam-link" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="hero"
+               style="background-image: url(img/bg-hero.jpg)">
+        <div class="container hero__container">
+          <h1 class="title">SURVIVE AT ALL COSTS</h1>
+          <p class="subtitle">Experience new social battle royale game</p>
+          <a href="#"
+             class="hero__btn btn btn--primary">
+            <span>Buy Now on Steam</span>
+            <span class="line-vertical">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                   width="3"
+                   height="26"
+                   viewBox="0 0 3 26"
+                   fill="none">
+                <path opacity="0.5"
+                      d="M0.587158 0.835388L1.58716 24.7643"
+                      stroke="#1A1917"
+                      stroke-width="0.873968"
+                      stroke-linecap="round" />
+              </svg>
+            </span>
+            <span>$14.99</span>
+          </a>
+          <a class="hero__scroll-down"
+             href="#about">
+            <span>The story</span>
+            <img src="img/scroll-down.svg"
+                 class="animate__animated animate__fadeOutDown animate__infinite" />
+          </a>
+        </div>
+      </section>
+      <section class="about"
+               style="background-image: url(img/bg-about.jpg)"
+               id="about">
+        <div class="container about__container">
+          <div class="about__info">
+            <h2 class="subtitle about__title">What is SOS?</h2>
+            <p class="title about__subtitle">social battle royale game</p>
+            <div class="about__text">
+              <p>
+                Each round, <span>you</span> and <span>15</span> other
+                contestants compete to escape a deadly island filled with
+                monsters. The trick is: <span>three</span> people can survive.
+                Will you run solo or form friendships with others to escape?
+              </p>
+              <p>
+                Making the right decisions could be the difference between
+                life and death.
+              </p>
+            </div>
+          </div>
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="img/slider-img1.png"
+                     alt=""
+                     class="swiper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-img2.png"
+                     alt=""
+                     class="swiper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-img3.png"
+                     alt=""
+                     class="swiper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-img1.png"
+                     alt=""
+                     class="swiper__img" />
+              </div>
+              <div class="swiper-slide">
+                <img src="img/slider-img2.png"
+                     alt=""
+                     class="swiper__img" />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper__button-next">
+              <img src="img/slider-switch.svg"
+                   alt="" />
+            </div>
           </div>
         </div>
-      </header>
-      <main class="main">
-        <section class="hero" style="background-image: url(img/bg-hero.jpg)">
-          <div class="container hero__container">
-            <h1 class="title">SURVIVE AT ALL COSTS</h1>
-            <p class="subtitle">Experience new social battle royale game</p>
-            <a href="#" class="hero__btn btn btn--primary">
-              <span>Buy Now on Steam</span>
-              <span class="line-vertical">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="3"
-                  height="26"
-                  viewBox="0 0 3 26"
-                  fill="none"
-                >
-                  <path
-                    opacity="0.5"
-                    d="M0.587158 0.835388L1.58716 24.7643"
-                    stroke="#1A1917"
-                    stroke-width="0.873968"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </span>
-              <span>$14.99</span>
-            </a>
-            <a class="hero__scroll-down" href="#about">
-              <span>The story</span>
-              <img
-                src="img/scroll-down.svg"
-                class="animate__animated animate__fadeOutDown animate__infinite"
-              />
-            </a>
+      </section>
+      <section class="features"
+               style="background-image: url(img/bg-features.jpg)">
+        <div class="container features__container">
+          <div class="features__info">
+            <h2 class="subtitle features__title">What’s so special?</h2>
+            <p class="title features__subtitle">features</p>
           </div>
-        </section>
-        <section
-          class="about"
-          style="background-image: url(img/bg-about.jpg)"
-          id="about"
-        >
-          <div class="container about__container">
-            <div class="about__info">
-              <h2 class="subtitle about__title">What is SOS?</h2>
-              <p class="title about__subtitle">social battle royale game</p>
-              <div class="about__text">
-                <p>
-                  Each round, <span>you</span> and <span>15</span> other
-                  contestants compete to escape a deadly island filled with
-                  monsters. The trick is: <span>three</span> people can survive.
-                  Will you run solo or form friendships with others to escape?
-                </p>
-                <p>
-                  Making the right decisions could be the difference between
-                  life and death.
-                </p>
-              </div>
+          <div class="accordeon features__accordeon">
+            <div class="accordeon__btn suptitle">SURVIVE AT ALL COSTS</div>
+            <div class="accordeon__text text">
+              You have 30 minutes to find a relic, signal for extraction, and
+              grab one of three spots on the rescue chopper.
             </div>
-            <div class="swiper">
-              <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide">
-                  <img src="img/slider-img1.png" alt="" class="swiper__img" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slider-img2.png" alt="" class="swiper__img" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slider-img3.png" alt="" class="swiper__img" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slider-img1.png" alt="" class="swiper__img" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="img/slider-img2.png" alt="" class="swiper__img" />
-                </div>
-              </div>
-              <!-- If we need pagination -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper__button-next">
-                <img src="img/slider-switch.svg" alt="" />
-              </div>
+            <div class="accordeon__btn suptitle">
+              CREATE ALLIES AND ENEMIES
+            </div>
+            <div class="accordeon__text text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
+              recusandae fugiat est culpa obcaecati nemo alias a totam
+              molestiae adipisci ratione consectetur, cupiditate optio!
+              Perspiciatis sint eius magnam nobis quidem?
+            </div>
+            <div class="accordeon__btn suptitle">IMPRESS THE AUDIENCE</div>
+            <div class="accordeon__text text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
+              maiores voluptates ea nemo unde doloribus?
             </div>
           </div>
-        </section>
-        <section
-          class="features"
-          style="background-image: url(img/bg-features.jpg)"
-        >
-          <div class="container features__container">
-            <div class="features__info">
-              <h2 class="subtitle features__title">What’s so special?</h2>
-              <p class="title features__subtitle">features</p>
+        </div>
+      </section>
+      <section class="requirements"
+               style="background-image: url(img/bg-requirements.jpg)">
+        <div class="container requirements__container">
+          <div class="requirements__info">
+            <h2 class="subtitle requirements__title">Can My Computer Run this game?</h2>
+            <p class="title requirements__subtitle">system requirements</p>
+          </div>
+          <div class="requirements__table table-requirements">
+            <div class="table-requirements__item">
+              <span class="suptitle">os:</span>
+              <p class="text">Windows 7 64-bit only (No OSX support at this time)</p>
             </div>
-            <div class="accordeon features__accordeon">
-              <div class="accordeon__btn suptitle">SURVIVE AT ALL COSTS</div>
-              <div class="accordeon__text text">
-                You have 30 minutes to find a relic, signal for extraction, and
-                grab one of three spots on the rescue chopper.
-              </div>
-              <div class="accordeon__btn suptitle">
-                CREATE ALLIES AND ENEMIES
-              </div>
-              <div class="accordeon__text text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
-                recusandae fugiat est culpa obcaecati nemo alias a totam
-                molestiae adipisci ratione consectetur, cupiditate optio!
-                Perspiciatis sint eius magnam nobis quidem?
-              </div>
-              <div class="accordeon__btn suptitle">IMPRESS THE AUDIENCE</div>
-              <div class="accordeon__text text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta
-                maiores voluptates ea nemo unde doloribus?
-              </div>
+            <div class="table-requirements__item">
+              <span class="suptitle">processor:</span>
+              <p class="text">Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8 GHZ</p>
+            </div>
+            <div class="table-requirements__item">
+              <span class="suptitle">memory:</span>
+              <p class="text">8 GB RAM</p>
+            </div>
+            <div class="table-requirements__item">
+              <span class="suptitle">storage:</span>
+              <p class="text">8 GB available space</p>
+            </div>
+            <div class="table-requirements__item table-requirements__item-graphics">
+              <span class="suptitle">graphics:</span>
+              <p class="text">NVIDIA GeForce GTX 660 2GB or 
+                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+              </p>
             </div>
           </div>
-        </section>
-        <section
-          class="requirements"
-          style="background-image: url(img/bg-requirements.jpg)"
-        >
-          <div class="container requirements__container"></div>
-        </section>
-      </main>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script src="js/accordeon.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="js/accordeon.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

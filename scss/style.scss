@@ -2,6 +2,7 @@
 $color-white: #ffffff;
 $color-black: #000000;
 $color-yellowOrange: #ffb548;
+$color-grey: #979797;
 //Общие настройки проекта
 @import "./settings";
 //Размер огранич. контейнера
@@ -72,3 +73,4 @@ $color-yellowOrange: #ffb548;
 @import "./main/slider";
 @import "./main/features";
 @import "./main/accordeon";
+@import "./main/requirements";
