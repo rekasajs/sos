@@ -1,0 +1,14 @@
+.menu {
+  margin-left: auto;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__item {
+    padding: 5px 5px;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}

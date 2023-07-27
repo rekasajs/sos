@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonts/BebasNeueBold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "OpenSans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: $color-white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border: none;
+  border-radius: 0;
+  background-color: inherit;
+  padding: 0;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  outline: none;
+}

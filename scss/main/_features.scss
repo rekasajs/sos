@@ -1,0 +1,15 @@
+.features {
+  height: 100vh;
+  min-height: 960px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__container {
+    padding-top: 30vh;
+  }
+
+  &__info {
+    margin-left: 680px;
+    margin-bottom: 70px;
+  }
+}

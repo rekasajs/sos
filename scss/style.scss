@@ -1,0 +1,74 @@
+//Цвета шрифта
+$color-white: #ffffff;
+$color-black: #000000;
+$color-yellowOrange: #ffb548;
+//Общие настройки проекта
+@import "./settings";
+//Размер огранич. контейнера
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 17px;
+  border-radius: 4px;
+  background: linear-gradient(181deg, #ffb548 0%, #f3af34 99.52%);
+  color: #1a1917;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  font-family: Bebas;
+  font-size: 80px;
+  line-height: normal;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-family: Bebas;
+  font-size: 24px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.suptitle {
+  color: $color-yellowOrange;
+  text-align: center;
+  font-family: Bebas;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+
+.text {
+  color: $color-white;
+  text-align: justify;
+  font-family: OpenSans;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 22px;
+}
+
+/*БОЛЬШИЕ КОМПОНЕНТЫ*/
+@import "./header/header";
+@import "./main/main";
+
+/*МАЛЕНЬКИЕ КОМПОНЕНТЫ*/
+@import "./header/menu";
+@import "./header/change-lang";
+@import "./header/social";
+
+@import "./main/hero";
+@import "./main/about";
+@import "./main/slider";
+@import "./main/features";
+@import "./main/accordeon";

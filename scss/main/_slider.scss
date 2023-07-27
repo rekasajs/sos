@@ -1,0 +1,40 @@
+.swiper {
+  position: relative;
+  display: flex;
+  width: 503px;
+  margin-top: 190px;
+  &__img {
+    width: 503px;
+    height: 611px;
+    border-radius: 10px;
+  }
+  &__button-next {
+    cursor: pointer;
+    max-width: 35px;
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 40px);
+    transform: translateY(-50%);
+    z-index: 200;
+  }
+  &-pagination {
+    text-align: center;
+    z-index: 100;
+    &-bullet {
+      background-color: transparent;
+      border: 1px solid $color-white;
+      width: 14px;
+      height: 14px;
+      opacity: 1;
+      &-active {
+        background-color: $color-white;
+      }
+    }
+  }
+  &-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 25px;
+  }
+  &-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 30px;
+  }
+}

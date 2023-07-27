@@ -1,0 +1,28 @@
+.change-lang {
+  color: $color-white;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+  margin-right: 23px;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  option {
+    background-color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+    outline: none;
+    color: $color-white;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+  }
+}
