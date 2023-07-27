@@ -1,0 +1,66 @@
+.accordeon {
+  max-width: 500px;
+  margin-left: 680px;
+  &__btn {
+    text-align: start;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: transparent;
+      border: 1px solid $color-white;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      left: -50px;
+      top: 50%;
+      transform: translateY(-70%);
+      transition: all 0.3s ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 0;
+      left: -43px;
+      top: 26px;
+      background-color: $color-white;
+      transition: all 0.3s ease;
+    }
+    &--active {
+      color: $color-yellowOrange;
+      &::before {
+        content: "";
+        position: absolute;
+        background-color: $color-white;
+        border: 1px solid $color-white;
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        left: -50px;
+        top: 50%;
+        transform: translateY(-70%);
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 200%;
+        left: -43px;
+        top: 26px;
+        background-color: $color-white;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    max-width: 360px;
+    letter-spacing: 1px;
+  }
+}
